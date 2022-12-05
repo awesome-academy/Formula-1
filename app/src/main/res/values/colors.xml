@@ -22,4 +22,15 @@
     <color name="color_pink_tabLayout">#77E87CA7</color>
     <color name="color_red">#D50000</color>
     <color name="color_bg_team_score">#EEEEEE</color>
+    //Team Color
+    <color name="color_red_bull">#1E5BC6</color>
+    <color name="color_mercedes">#6CD3BF</color>
+    <color name="color_ferrari">#ED1C24</color>
+    <color name="color_mclaren">#F58020</color>
+    <color name="color_alpine">#2293D1</color>
+    <color name="color_tauri">#4E7C9B</color>
+    <color name="color_aston">#2D826D</color>
+    <color name="color_williams">#37BEDD</color>
+    <color name="color_romeo">#B12039</color>
+    <color name="color_haas">#B6BABD</color>
 </resources>

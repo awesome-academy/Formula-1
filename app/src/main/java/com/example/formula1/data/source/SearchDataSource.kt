@@ -6,7 +6,7 @@ import com.example.formula1.data.model.TeamStandingList
 
 interface SearchDataSource {
     interface Remote {
-        suspend fun getSearchResult(searchKey: String): DriverSearchResponse
+        suspend fun getSearchResult(id: Int): DriverSearchResponse
         suspend fun getDriverStanding(year: String): DriverStandingList
         suspend fun getTeamStanding(year: String): TeamStandingList
     }

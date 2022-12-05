@@ -20,9 +20,9 @@ class StandingViewModel(private val repository: SearchRepository) : BaseViewMode
     private val _teamList = MutableLiveData<TeamStandingList>()
     val teamList: LiveData<TeamStandingList> get() = _teamList
 
-    fun searchDriver(key: String) {
+    fun searchDriver(id: Int) {
         launchAsync(
-            request = { repository.getSearchResult(key, Dispatchers.IO) },
+            request = { repository.getSearchResult(id, Dispatchers.IO) },
             onSuccess = {
                 _searchResult.value = it
             },

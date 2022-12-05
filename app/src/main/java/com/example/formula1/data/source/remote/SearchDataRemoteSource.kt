@@ -7,8 +7,8 @@ import com.example.formula1.data.source.SearchDataSource
 
 class SearchDataRemoteSource(private val apiService: APIService): SearchDataSource.Remote {
 
-    override suspend fun getSearchResult(searchKey: String): DriverSearchResponse {
-        return apiService.getSearchDriver(searchKey)
+    override suspend fun getSearchResult(id: Int): DriverSearchResponse {
+        return apiService.getSearchDriver(id)
     }
 
     override suspend fun getDriverStanding(year: String): DriverStandingList {

@@ -15,7 +15,7 @@ interface APIService {
 
     @GET(API_DRIVER_SEARCH)
     suspend fun getSearchDriver(
-        @Query("search") key: String
+        @Query("id") id: Int
     ): DriverSearchResponse
 
     @GET(API_DRIVER_STANDING)

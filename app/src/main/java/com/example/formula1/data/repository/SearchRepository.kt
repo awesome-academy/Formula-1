@@ -7,7 +7,7 @@ import com.example.formula1.utils.DataResult
 import kotlinx.coroutines.CoroutineDispatcher
 
 interface SearchRepository {
-    suspend fun getSearchResult(searchKey: String, dispatcher: CoroutineDispatcher): DataResult<DriverSearchResponse>
+    suspend fun getSearchResult(id: Int, dispatcher: CoroutineDispatcher): DataResult<DriverSearchResponse>
 
     suspend fun getDriverStandingResult(year: String, dispatcher: CoroutineDispatcher): DataResult<DriverStandingList>
 

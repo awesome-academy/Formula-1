@@ -13,10 +13,10 @@ class SearchRepositoryImplement(private val remote: SearchDataSource.Remote) :
     SearchRepository {
 
     override suspend fun getSearchResult(
-        searchKey: String,
+        id: Int,
         dispatcher: CoroutineDispatcher
     ): DataResult<DriverSearchResponse> {
-        return getResult(dispatcher) { remote.getSearchResult(searchKey) }
+        return getResult(dispatcher) { remote.getSearchResult(id) }
     }
 
     override suspend fun getDriverStandingResult(
