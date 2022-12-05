@@ -1,4 +1,4 @@
-package com.example.formula1.view.mainscreen.fragments.standing
+package com.example.formula1.view.mainscreen.fragments.standing.teamdetail
 
 import android.app.Dialog
 import android.os.Bundle

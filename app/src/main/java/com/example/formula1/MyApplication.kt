@@ -13,7 +13,13 @@ class MyApplication : Application() {
     override fun onCreate() {
         super.onCreate()
 
-        val module = listOf(NetworkModule, ViewModelModule, DataSourceModule, RepositoryModule)
+        val module = listOf(
+            NetworkModule,
+            ViewModelModule,
+            DataSourceModule,
+            RepositoryModule,
+            databaseModule
+        )
         startKoin {
             androidContext(this@MyApplication)
             modules(module)

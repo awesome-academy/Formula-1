@@ -29,6 +29,7 @@
     <dimen name="dp_140">140dp</dimen>
     <dimen name="dp_160">160dp</dimen>
     <dimen name="dp_180">180dp</dimen>
+    <dimen name="dp_190">190dp</dimen>
     <dimen name="dp_200">200dp</dimen>
     <dimen name="dp_220">220dp</dimen>
     <dimen name="dp_240">240dp</dimen>
@@ -46,6 +47,7 @@
     <dimen name="sp_24">24sp</dimen>
     <dimen name="sp_28">28sp</dimen>
     <dimen name="sp_30">30sp</dimen>
+    <dimen name="sp_40">40sp</dimen>
 
     <dimen name="design_navigation_icon_size" tools:override="true">40dp</dimen>
     <dimen name="design_navigation_active_text" tools:override="true">11sp</dimen>

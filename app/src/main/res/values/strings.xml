@@ -12,4 +12,12 @@
     <string name="text_2022">2022</string>
     <string name="text_enter_the_year">Enter the Year</string>
     <string name="text_max">MAX</string>
+    <string name="text_birth_day">Birthday: </string>
+    <string name="text_birth_place">Birthplace: </string>
+    <string name="text_nationality">Nationality: </string>
+    <string name="text_grand_prix_entered">Grand Prix Entered</string>
+    <string name="text_podium_number">Podiums</string>
+    <string name="text_highest_position">Highest Position</string>
+    <string name="text_career_points">Career Points</string>
+    <string name="text_current_team">Current Team</string>
 </resources>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg_detail_white_trans"
+    tools:context=".view.mainscreen.fragments.standing.driverdetail.DetailFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_8"
+                app:cardCornerRadius="@dimen/dp_4"
+                app:cardElevation="@dimen/dp_16"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_driver_card_view_detail"
+                    android:paddingHorizontal="@dimen/dp_10"
+                    android:paddingVertical="@dimen/dp_8">
+
+                    <TextView
+                        android:id="@+id/text_birthday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_bold"
+                        android:text="@string/text_birth_day"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/sp_18"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/text_birthplace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_2"
+                        android:fontFamily="@font/inter_bold"
+                        android:text="@string/text_birth_place"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/sp_18"
+                        app:layout_constraintLeft_toLeftOf="@+id/text_birthday"
+                        app:layout_constraintTop_toBottomOf="@+id/text_birthday" />
+
+                    <TextView
+                        android:id="@+id/text_nationality"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_2"
+                        android:fontFamily="@font/inter_bold"
+                        android:text="@string/text_nationality"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/sp_18"
+                        app:layout_constraintLeft_toLeftOf="@+id/text_birthplace"
+                        app:layout_constraintTop_toBottomOf="@+id/text_birthplace" />
+
+                    <TextView
+                        android:id="@+id/text_birthday_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_4"
+                        android:fontFamily="@font/inter_regular"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/sp_18"
+                        app:layout_constraintBottom_toBottomOf="@id/text_birthday"
+                        app:layout_constraintLeft_toRightOf="@+id/text_birthday"
+                        app:layout_constraintTop_toTopOf="@+id/text_birthday"
+                        tools:text="@string/text_driver_name" />
+
+                    <TextView
+                        android:id="@+id/text_birthplace_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_regular"
+                        android:layout_marginStart="@dimen/dp_4"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/sp_18"
+                        app:layout_constraintBottom_toBottomOf="@id/text_birthplace"
+                        app:layout_constraintLeft_toRightOf="@+id/text_birthplace"
+                        app:layout_constraintTop_toTopOf="@+id/text_birthplace"
+                        tools:text="@string/text_driver_name" />
+
+                    <TextView
+                        android:id="@+id/text_nationality_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_regular"
+                        android:layout_marginStart="@dimen/dp_4"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/sp_18"
+                        app:layout_constraintLeft_toRightOf="@+id/text_nationality"
+                        app:layout_constraintTop_toTopOf="@+id/text_nationality"
+                        tools:text="@string/text_driver_name" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view_1"
+                android:layout_width="@dimen/dp_190"
+                android:layout_height="@dimen/dp_80"
+                android:layout_marginTop="@dimen/dp_16"
+                app:cardElevation="@dimen/dp_16"
+                app:layout_constraintLeft_toLeftOf="@+id/card_view_detail"
+                app:layout_constraintTop_toBottomOf="@+id/card_view_detail">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_item_detail"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_grand_prix"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_grand_prix_entered"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/sp_20" />
+
+                    <TextView
+                        android:id="@+id/text_grand_prix_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:fontFamily="@font/formula1_bold"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/sp_24"
+                        tools:text="@string/text_score" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view_2"
+                android:layout_width="@dimen/dp_190"
+                android:layout_height="@dimen/dp_80"
+                app:cardElevation="@dimen/dp_16"
+                app:layout_constraintRight_toRightOf="@+id/card_view_detail"
+                app:layout_constraintTop_toTopOf="@+id/card_view_1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_item_detail"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_podium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_podium_number"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/sp_20" />
+
+                    <TextView
+                        android:id="@+id/text_podium_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:fontFamily="@font/formula1_bold"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/sp_24"
+                        tools:text="@string/text_score" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view_3"
+                android:layout_width="@dimen/dp_190"
+                android:layout_height="@dimen/dp_80"
+                android:layout_marginTop="@dimen/dp_16"
+                app:cardElevation="@dimen/dp_16"
+                app:layout_constraintLeft_toLeftOf="@+id/card_view_1"
+                app:layout_constraintTop_toBottomOf="@+id/card_view_1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_item_detail"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_career_points"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_career_points"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/sp_20" />
+
+                    <TextView
+                        android:id="@+id/text_career_points_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:fontFamily="@font/formula1_bold"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/sp_24"
+                        tools:text="@string/text_score" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view_4"
+                android:layout_width="@dimen/dp_190"
+                android:layout_height="@dimen/dp_80"
+                android:layout_marginTop="@dimen/dp_16"
+                app:cardElevation="@dimen/dp_16"
+                app:layout_constraintRight_toRightOf="@+id/card_view_2"
+                app:layout_constraintTop_toBottomOf="@+id/card_view_2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_item_detail"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_highest_position"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_highest_position"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/sp_20" />
+
+                    <TextView
+                        android:id="@+id/text_highest_position_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:fontFamily="@font/formula1_bold"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/sp_24"
+                        tools:text="@string/text_score" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/text_current_team"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_24"
+                android:fontFamily="@font/formula1_bold"
+                android:text="@string/text_current_team"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/dp_28"
+                app:layout_constraintLeft_toLeftOf="@id/card_view_3"
+                app:layout_constraintTop_toBottomOf="@id/card_view_3" />
+
+            <ImageView
+                android:id="@+id/img_car_bg"
+                android:layout_width="@dimen/dp_300"
+                android:layout_height="@dimen/dp_100"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_marginBottom="@dimen/dp_24"
+                android:src="@drawable/bg_car_pattern"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_current_team" />
+
+            <ImageView
+                android:id="@+id/img_car"
+                android:layout_width="@dimen/dp_300"
+                android:layout_height="@dimen/dp_100"
+                app:layout_constraintTop_toTopOf="@+id/img_car_bg"
+                app:layout_constraintBottom_toBottomOf="@+id/img_car_bg"
+                app:layout_constraintLeft_toLeftOf="@+id/img_car_bg"
+                app:layout_constraintRight_toRightOf="@+id/img_car_bg"
+                tools:src="@drawable/img_car_fer" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

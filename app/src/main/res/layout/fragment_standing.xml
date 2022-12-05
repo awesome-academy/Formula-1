@@ -18,6 +18,16 @@
         android:textSize="@dimen/sp_24"
         android:fontFamily="@font/formula1_bold"/>
 
+    <ImageView
+        android:id="@+id/img_history"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:src="@drawable/ic_baseline_history_24"
+        app:layout_constraintTop_toTopOf="@id/text_title"
+        android:layout_marginEnd="@dimen/dp_10"
+        app:layout_constraintBottom_toBottomOf="@id/text_title"
+        app:layout_constraintRight_toRightOf="parent"/>
+
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayoutStanding"
         android:layout_width="match_parent"

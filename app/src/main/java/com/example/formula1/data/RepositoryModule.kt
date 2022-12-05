@@ -6,9 +6,9 @@ import com.example.formula1.data.source.SearchDataSource
 import org.koin.dsl.module
 
 val RepositoryModule = module {
-    single { provideSearchRepository(get()) }
+    single { provideSearchRepository(get(), get()) }
 }
 
-fun provideSearchRepository(remote: SearchDataSource.Remote): SearchRepository {
-    return SearchRepositoryImplement(remote)
+fun provideSearchRepository(remote: SearchDataSource.Remote, local: SearchDataSource.Local): SearchRepository {
+    return SearchRepositoryImplement(remote, local)
 }
