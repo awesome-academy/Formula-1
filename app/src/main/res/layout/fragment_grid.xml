@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.mainscreen.fragments.races.GridFragment">
+
+    <View
+        android:id="@+id/view_information"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:background="@color/color_black"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_position"
+        android:layout_width="@dimen/dp_48"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/dp_4"
+        android:fontFamily="@font/formula1_regular"
+        android:text="@string/text_position_shortening"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/sp_18"
+        app:layout_constraintBottom_toBottomOf="@id/view_information"
+        app:layout_constraintLeft_toLeftOf="@id/view_information"
+        app:layout_constraintTop_toTopOf="@id/view_information" />
+
+    <TextView
+        android:id="@+id/text_driver"
+        android:layout_width="@dimen/dp_70"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/dp_20"
+        android:fontFamily="@font/formula1_regular"
+        android:text="@string/text_driver"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/sp_18"
+        app:layout_constraintBottom_toBottomOf="@id/view_information"
+        app:layout_constraintLeft_toRightOf="@id/text_position"
+        app:layout_constraintTop_toTopOf="@id/view_information" />
+
+    <TextView
+        android:id="@+id/text_qualify_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/formula1_regular"
+        android:text="@string/text_qualify_result"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/sp_18"
+        app:layout_constraintBottom_toBottomOf="@id/view_information"
+        app:layout_constraintLeft_toRightOf="@id/text_driver"
+        app:layout_constraintRight_toRightOf="@id/view_information"
+        app:layout_constraintTop_toTopOf="@id/view_information" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_grid"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/view_information"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:listitem="@layout/item_qualify_layout"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

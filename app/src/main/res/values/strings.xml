@@ -30,6 +30,7 @@
     <string name="text_pole_positions">Pole Positions</string>
     <string name="text_highest_finish">Highest Finish</string>
     <string name="text_drivers">Drivers</string>
+    <string name="text_driver">Driver</string>
     <string name="text_location">Location: </string>
     <string name="text_first_time_open">Opened: </string>
     <string name="text_first_grand_prix">First Grand Prix: </string>
@@ -40,4 +41,14 @@
     <string name="text_archived_by">Driver: </string>
     <string name="text_time_record">Time: </string>
     <string name="text_year">Year: </string>
+    <string name="text_date">Date: %s</string>
+    <string name="text_starting_grid">Starting Grid</string>
+    <string name="text_result">Result</string>
+    <string name="text_position_shortening">POS</string>
+    <string name="text_qualify_result">Qualify Result</string>
+    <string name="text_finish_time">Time/Res</string>
+    <string name="text_point">Point</string>
+    <string name="text_fake_time">1.30.555</string>
+    <string name="text_dhl_fastest_lap">DHL Fastest Lap</string>
+    <string name="text_zero_point">0</string>
 </resources>

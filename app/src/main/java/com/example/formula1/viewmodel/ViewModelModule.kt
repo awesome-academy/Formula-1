@@ -7,4 +7,5 @@ val ViewModelModule = module {
     viewModel { StandingViewModel(get()) }
     viewModel { TeamDetailViewModel(get()) }
     viewModel { CircuitViewModel(get()) }
+    viewModel { RaceViewModel(get()) }
 }

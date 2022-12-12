@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_6">
+
+    <TextView
+        android:id="@+id/text_position"
+        android:layout_width="@dimen/dp_48"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_4"
+        android:fontFamily="@font/formula1_bold"
+        android:gravity="center"
+        android:text="@string/text_number_1"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/sp_20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="@dimen/dp_3"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginStart="@dimen/dp_10"
+        android:background="@color/color_red"
+        app:layout_constraintLeft_toRightOf="@id/text_position"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_driver_name"
+        android:layout_width="@dimen/dp_70"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:fontFamily="@font/formula1_bold"
+        android:gravity="center"
+        android:text="@string/text_number_1"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/sp_20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/divider"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_time"
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        tools:text="@string/text_fake_time"
+        android:textSize="@dimen/sp_18"
+        android:textColor="@color/color_black"
+        android:paddingVertical="@dimen/dp_2"
+        android:background="@drawable/bg_team_score_border"
+        app:layout_constraintLeft_toRightOf="@id/text_driver_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/text_point"/>
+
+    <TextView
+        android:id="@+id/text_point"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/formula1_regular"
+        android:gravity="center"
+        android:text="@string/text_zero_point"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/sp_18"
+        android:layout_marginEnd="@dimen/dp_20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/text_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/color_grey"
+        android:layout_marginTop="@dimen/dp_6"
+        app:layout_constraintTop_toBottomOf="@id/divider"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

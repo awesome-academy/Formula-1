@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.mainscreen.fragments.races.RaceDetailActivity">
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginStart="@dimen/dp_10"
+        android:elevation="@dimen/dp_4"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toStartOf="@id/text_race_name"
+        app:layout_constraintTop_toTopOf="@id/text_race_name"
+        app:layout_constraintBottom_toBottomOf="@id/text_race_name"/>
+
+    <TextView
+        android:id="@+id/text_race_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_80"
+        android:background="@color/color_red"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/text_standings"
+        android:gravity="center"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/sp_24"
+        android:fontFamily="@font/formula1_bold"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/text_race_name"
+        android:background="@color/color_red"
+        app:tabTextColor="@color/color_white"
+        app:tabTextAppearance="@style/custom_tab_text"
+        app:tabIndicatorColor="@color/color_white"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab_layout_detail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

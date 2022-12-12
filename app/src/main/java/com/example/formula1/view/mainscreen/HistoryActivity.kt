@@ -8,6 +8,7 @@ import com.example.formula1.databinding.ActivityHistoryBinding
 import com.example.formula1.utils.NONE
 import com.example.formula1.utils.KEY_DRIVER_ID
 import com.example.formula1.utils.KEY_TEAM_ID
+import com.example.formula1.utils.HISTORY_NUMBER_ITEM
 import com.example.formula1.utils.TEXT_ERROR
 import com.example.formula1.utils.shortToast
 import com.example.formula1.utils.base.BaseActivity
@@ -42,7 +43,7 @@ class HistoryActivity : BaseActivity<ActivityHistoryBinding>(ActivityHistoryBind
     private fun setupObservers() {
        viewModel.driverLocalList.observe(this@HistoryActivity){ value ->
            val historyList = value.sortedBy { it.timeStamp }
-           driverAdapter.submitList(historyList.reversed())
+           driverAdapter.submitList(historyList.reversed().take(HISTORY_NUMBER_ITEM))
        }
     }
 

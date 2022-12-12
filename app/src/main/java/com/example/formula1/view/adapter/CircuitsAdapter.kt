@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.example.formula1.data.model.circuitsearchitem.Response
 import com.example.formula1.databinding.ItemCircuitBinding
+import com.example.formula1.utils.RB_ID
 import com.example.formula1.utils.base.BaseAdapter
 import com.example.formula1.utils.base.BaseViewHolder
 import com.example.formula1.utils.loadCoverImage
@@ -26,7 +27,7 @@ class CircuitsAdapter(private val onclickItem: (Response) -> Unit) :
             super.onBindData(data)
             val context = itemBinding.root.context
             itemBinding.textCircuitName.text = data.name
-            itemBinding.textPosition.text = adapterPosition.toString()
+            itemBinding.textPosition.text = adapterPosition.plus(RB_ID).toString()
             context.loadCoverImage(data.image.toString(), itemBinding.imgCircuit)
         }
     }

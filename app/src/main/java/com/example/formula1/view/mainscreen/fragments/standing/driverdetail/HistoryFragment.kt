@@ -3,6 +3,7 @@ package com.example.formula1.view.mainscreen.fragments.standing.driverdetail
 import android.content.Intent
 import com.example.formula1.data.model.driversearchitem.Team
 import com.example.formula1.databinding.FragmentHistoryBinding
+import com.example.formula1.utils.KEY_SEASON
 import com.example.formula1.utils.KEY_TEAM_ID
 import com.example.formula1.utils.NONE
 import com.example.formula1.utils.base.BaseFragment
@@ -29,6 +30,7 @@ class HistoryFragment : BaseFragment<FragmentHistoryBinding>(FragmentHistoryBind
 
     private fun onClickItem(data: Team) {
         val intent = Intent(context, TeamDetailActivity::class.java)
+        intent.putExtra(KEY_SEASON, data.season.toString())
         intent.putExtra(KEY_TEAM_ID, data.team?.id.toString())
         startActivity(intent)
     }

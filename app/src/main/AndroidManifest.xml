@@ -16,30 +16,29 @@
         android:theme="@style/Theme.Formula1"
         tools:targetApi="31">
         <activity
+            android:name=".view.mainscreen.fragments.races.RaceDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
             android:name=".view.mainscreen.fragments.circuits.CircuitDetailActivity"
             android:exported="false"
-            android:screenOrientation="portrait">
-        </activity>
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".view.mainscreen.HistoryActivity"
             android:exported="false"
-            android:screenOrientation="portrait">
-        </activity>
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".view.mainscreen.fragments.standing.teamdetail.TeamDetailActivity"
             android:exported="false"
-            android:screenOrientation="portrait">
-        </activity>
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".view.mainscreen.fragments.standing.driverdetail.DriverStandingDetail"
             android:exported="false"
-            android:screenOrientation="portrait">
-        </activity>
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".view.mainscreen.MainScreen"
             android:exported="false"
-            android:screenOrientation="portrait">
-        </activity>
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".view.SplashActivity"
             android:exported="true"
